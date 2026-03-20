@@ -7,8 +7,8 @@ app.use(express.json());
 // ==============================
 // CONFIG
 // ==============================
-const API_KEY = "YOUR_OPENROUTER_API_KEY";
-const MODEL = "openai/gpt-4o-mini";
+const API_KEY = "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";
+const MODEL = "minimax/minimax-m2.5:free";
 
 // ==============================
 // CHAT API (AGNES)
