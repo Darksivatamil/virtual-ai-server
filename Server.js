@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-const API_KEY = "YOUR_OPENROUTER_API_KEY";
+const API_KEY = "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";
 
 app.post("/chat", async (req, res) => {
   const message = req.body.message;
@@ -16,7 +16,7 @@ app.post("/chat", async (req, res) => {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      model: "openai/gpt-4o-mini",
+      model: "minimax/minimax-m2.5:free",
       messages: [{ role: "user", content: message }]
     })
   });
